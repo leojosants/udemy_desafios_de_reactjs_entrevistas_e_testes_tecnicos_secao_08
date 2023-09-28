@@ -1,0 +1,5 @@
+Ex 35: Contador com Redux
+
+● Crie um componente de contador;
+● O estado dele deve ser gerenciador por Redux;
+● Você precisa criar as funcionalidades de: incrementar, decrementar e resetar o contador;
