@@ -1,0 +1,11 @@
+Ex 37: Paginação com Redux
+
+● Crie um componente com paginação, que deve ser gerenciado por Redux;
+
+● Utilize uma API como JSONPlaceholder ou dados mockados, para simular a mudança de páginas;
+
+● A chamada de API deve ser controlada pelo Redux;
+
+● Para facilitar o manuseio da requisição, você pode utilizar o pacote redux tookit;
+
+● Crie a estrutura com: actions, reducers e store;
