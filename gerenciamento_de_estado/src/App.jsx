@@ -7,6 +7,7 @@ import store from './stor';
 import { Provider } from 'react-redux';
 import postStore from './context/posts/store';
 import PostsList from './components/PostsList';
+import MyForm from './components/MyForm';
 
 const style_data_div = [{ border: '1px solid red', marginBottom: '20px', padding: '1rem' }];
 
@@ -40,6 +41,12 @@ function App() {
         <Provider store={postStore}>
           <PostsList />
         </Provider>
+      </div>
+
+      {/* 4 - form with react final form */}
+      <div style={style_data_div[0]} data-div>
+        <h2>4 - Formulário com React Final Form</h2>
+        <MyForm />
       </div>
     </>
   );
