@@ -1,0 +1,9 @@
+Ex 36: Todo com Context API
+
+● Crie uma Lista de Tarefas gerenciada pelo Context API;
+
+● Deve ser possível criar tarefas, remover e também marcar como completa;
+
+● O formulário e a lista devem estar em componentes separados;
+
+● As funcionalidades devem estar no arquivo do contexto;
