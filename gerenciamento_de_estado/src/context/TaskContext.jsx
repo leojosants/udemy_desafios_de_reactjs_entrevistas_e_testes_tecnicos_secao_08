@@ -7,6 +7,11 @@ export function TaskProvider({ children }) {
     const [tasks, setTasks] = useState([]);
 
     const addTask = (task) => {
+        if (!task) {
+            alert('Não é possível adicionar tarefa com campo vazio!')
+            return;
+        }
+
         setTasks(
             [
                 ...tasks,
@@ -20,7 +25,17 @@ export function TaskProvider({ children }) {
     };
 
     const deleteTask = (id) => {
-        setTasks(tasks.filter((task) => task.id !== id));
+        tasks.filter((task) => {
+            if (task.id === id && task.completed === true) {
+                setTasks(tasks.filter((task) => task.id !== id));
+                return;
+            }
+
+            if (task.id === id && task.completed === false) {
+                alert('Conclua a tarefa para ser deletada!')
+                return;
+            }
+        });
     };
 
     const toggleTask = (id) => {
